@@ -36,3 +36,5 @@
 
 # Generated Files and Directories
 /build/
+/tmp/
+/cppcms/

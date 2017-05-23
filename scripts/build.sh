@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-mkdir -p build
-pushd build
-cmake ..
-make
-popd
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+${DIR}/build/app.sh

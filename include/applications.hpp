@@ -1,0 +1,31 @@
+#pragma once
+
+#include <cppcms/application.h>
+#include <cppcms/service.h>
+#include <cppcms/http_request.h>
+#include <cppcms/http_response.h>
+#include <cppcms/url_dispatcher.h>
+#include <cppcms/url_mapper.h>
+
+namespace sandbox {
+namespace cppcms {
+
+/**
+ *
+ */
+class applications : public cppcms::application {
+public:
+
+    /**
+     *
+     * @param srv
+     */
+    applications(cppcms::service& srv);
+    /**
+     *
+     */
+    void shutdown();
+};
+
+} /* namespace cppcms */
+} /* namespace sandbox */

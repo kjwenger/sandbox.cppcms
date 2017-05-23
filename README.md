@@ -5,3 +5,5 @@ Sandbox for C++/CppCMS/Boost/Node.js
 
 - Package management from OS: apt
 
+## Lection 2: Setting up CppCMS Framework
+
