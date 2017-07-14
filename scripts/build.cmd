@@ -1,5 +1,3 @@
-md build
-cd build
-cmake .. -G "MinGW Makefiles"
-mingw32-make
-cd ..
+set DIR=%~dp0
+
+call %DIR%\build\app.cmd
