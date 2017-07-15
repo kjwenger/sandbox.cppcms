@@ -3,18 +3,23 @@
 # Get latest packages
 sudo apt update
 
-# Get version control tools
-sudo apt install git
-sudo apt install subversion
+# network tools
+sudo apt install curl -y
+sudo apt install wget -y
 
-# Get build tools
-sudo apt install build-essential
-sudo apt install gcc
-sudo apt install g++
-sudo apt install cmake
+# Get version control tools
+sudo apt install git -y
+sudo apt install subversion -y
+
+# Get thirdparty tools
+sudo apt install build-essential -y
+sudo apt install gcc -y
+sudo apt install g++ -y
+sudo apt install cmake -y
 
 # Get CppCMS prerequisites
-sudo apt install libpcre3-dev
-sudo apt install zlib1g-dev
-sudo apt install libgcrypt11-dev
-sudo apt install libicu-dev python
+sudo apt install libpcre3-dev -y
+sudo apt install zlib1g-dev -y
+sudo apt install libgcrypt11-dev -y
+sudo apt install libicu-dev -y
+sudo apt install python -y
