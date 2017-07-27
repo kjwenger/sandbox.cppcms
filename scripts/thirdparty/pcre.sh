@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+#set -x
 
 CPUS=$(lscpu | grep "^CPU(s):" | sed s/"CPU(s):                "//)
 
@@ -22,4 +22,4 @@ cmake -DCMAKE_INSTALL_PREFIX="${USR_DIR}" \
 make -j ${CPUS}
 make -j ${CPUS} install
 cd ..
-cd ${CURRENT_DIR}
+cd "${CURRENT_DIR}"

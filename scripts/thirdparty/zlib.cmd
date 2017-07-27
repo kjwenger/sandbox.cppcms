@@ -19,7 +19,7 @@ echo Zlib Dir: %ZLIB_DIR%
 set TMP_DIR=%PROJECT_DIR%\tmp
 echo Tmp Dir: %TMP_DIR%
 
-md %ZLIB_DIR%\zlib
+md %ZLIB_DIR%
 md %TMP_DIR%
 cd %TMP_DIR%
 wget -c https://netix.dl.sourceforge.net/project/gnuwin32/zlib/1.2.3/zlib-1.2.3-src.zip
