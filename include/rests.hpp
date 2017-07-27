@@ -3,14 +3,14 @@
 #include <cppcms/application.h>
 #include <cppcms/service.h>
 
-namespace sandbox {
-namespace cppcms {
+namespace sandbox_cppcms {
 
 class rests : public cppcms::application {
 public:
     rests(cppcms::service& srv);
     virtual ~rests();
+
+    void info();
 };
 
-} /* namespace cppcms */
-} /* namespace sandbox */
+} /* namespace sandbox_cppcms */

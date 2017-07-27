@@ -1,8 +1,7 @@
 #include "applications.hpp"
 #include "rests.hpp"
 
-namespace sandbox {
-namespace cppcms {
+namespace sandbox_cppcms {
 
 applications::applications(cppcms::service& srv)
         : cppcms::application(srv) {
@@ -13,5 +12,4 @@ applications::applications(cppcms::service& srv)
             1);
 }
 
-} /* namespace cppcms */
-} /* namespace sandbox */
+} /* namespace sandbox_cppcms */

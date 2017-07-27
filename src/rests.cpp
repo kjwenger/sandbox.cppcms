@@ -1,17 +1,15 @@
 #include "rests.hpp"
 
-namespace sandbox {
-namespace cppcms {
+#include <cppcms/http_request.h>
 
-bool rests::DEBUG = false;
+namespace sandbox_cppcms {
 
 rests::rests(cppcms::service& srv) : cppcms::application(srv) {
-
+    dispatcher().map("GET","", &rests::info, this);
 };
 
 rests::~rests() {
 
 }
 
-} /* namespace cppcms */
-} /* namespace sandbox */
+} /* namespace sandbox_cppcms */

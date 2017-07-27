@@ -4,4 +4,4 @@ CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 ${CURRENT_DIR}/thirdparty/cppcms.sh
 
-#${CURRENT_DIR}/thirdparty/app.sh
+${CURRENT_DIR}/thirdparty/app.sh

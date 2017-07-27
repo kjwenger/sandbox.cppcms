@@ -7,8 +7,7 @@
 #include <cppcms/url_dispatcher.h>
 #include <cppcms/url_mapper.h>
 
-namespace sandbox {
-namespace cppcms {
+namespace sandbox_cppcms {
 
 /**
  *
@@ -27,5 +26,4 @@ public:
     void shutdown();
 };
 
-} /* namespace cppcms */
-} /* namespace sandbox */
+} /* namespace sandbox_cppcms */
