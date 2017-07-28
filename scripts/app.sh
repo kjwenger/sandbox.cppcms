@@ -10,6 +10,7 @@ PROJECT_DIR="$(dirname "${SCRIPTS_DIR}")"
 USR_DIR="${PROJECT_DIR}/usr"
 
 cd "${PROJECT_DIR}"
+cppcheck include src
 mkdir -p build
 pushd build
 cmake -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \
