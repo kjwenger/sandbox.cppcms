@@ -2,7 +2,7 @@
 set(CMAKE_SYSTEM_NAME Linux)
 
 # which system root to use
-set(CMAKE_PREFIX_PATH /usr/arm-linux-gnueabihf)
+set(CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/usr/arm-linux-gnueabihf)
 
 # which C and C++ compiler to use
 set(CMAKE_C_COMPILER  /usr/bin/arm-linux-gnueabihf-gcc)

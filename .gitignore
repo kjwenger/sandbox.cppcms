@@ -35,6 +35,6 @@
 /.idea/
 
 # Generated Files and Directories
-/build/
+/build*/
 /tmp/
 /usr/
