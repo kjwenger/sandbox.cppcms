@@ -7,6 +7,7 @@ add_executable(sandbox-cppcms ${SRC})
 include_directories(
         ${CMAKE_SOURCE_DIR}/usr/include
         /usr/local/include
+        /usr/include
         ${CMAKE_SOURCE_DIR}/include
 )
 target_link_libraries(sandbox-cppcms
