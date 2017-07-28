@@ -20,6 +20,7 @@ public:
      * @param srv
      */
     applications(cppcms::service& srv);
+
     /**
      *
      */

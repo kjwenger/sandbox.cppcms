@@ -10,7 +10,7 @@ public:
     rests(cppcms::service& srv);
     virtual ~rests();
 
-    void info();
+    void get_info();
 };
 
 } /* namespace sandbox_cppcms */

@@ -8,6 +8,6 @@ call %CURRENT_DIR%\thirdparty\pcre.cmd
 call %CURRENT_DIR%\thirdparty\zlib.cmd
 call %CURRENT_DIR%\thirdparty\cppcms.cmd
 
-call %CURRENT_DIR%\thirdparty\app.cmd
+call %CURRENT_DIR%\app.cmd
 
 endlocal
