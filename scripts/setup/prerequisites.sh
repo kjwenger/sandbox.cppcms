@@ -23,3 +23,7 @@ sudo apt install zlib1g-dev -y
 sudo apt install libgcrypt11-dev -y
 sudo apt install libicu-dev -y
 sudo apt install python -y
+
+# Get SQLite
+sudo apt install sqlite3 -y
+sudo apt install libsqlite3-dev -y

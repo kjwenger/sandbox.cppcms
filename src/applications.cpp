@@ -1,5 +1,5 @@
 #include "applications.hpp"
-#include "rests.hpp"
+#include "rest/rests.hpp"
 
 namespace sandbox_cppcms {
 

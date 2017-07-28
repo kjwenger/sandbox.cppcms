@@ -16,3 +16,7 @@ sudo apt install libpcre3-dev:armhf -y
 sudo apt install zlib1g-dev:armhf -y
 sudo apt install libgcrypt11-dev:armhf -y
 sudo apt install libicu-dev:armhf -y
+
+# Get SQLite
+sudo apt install sqlite3:armhf -y
+sudo apt install libsqlite3-dev:armhf -y
