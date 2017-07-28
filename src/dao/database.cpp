@@ -10,12 +10,22 @@ database::~database() {
 
 }
 
-//void database::enumeratePets(std::vector<const Pet&> pets) {
-//    std::vector<hiberlite::bean_ptr<Pet>> allBeans = db.getAllBeans<Pet>();
-//}
-//
-//void database::createPet(const Pet& pet) {
-//    db.copyBean(pet);
+void database::enumeratePets(std::vector<Pet>& pets) {
+    std::vector<hiberlite::bean_ptr<sandbox_cppcms::Pet>> allBeans =
+            db.getAllBeans<sandbox_cppcms::Pet>();
+    pets.clear();
+    for (std::vector<hiberlite::bean_ptr<sandbox_cppcms::Pet>>::const_iterator
+            iterator = allBeans.begin();
+            iterator != allBeans.end();
+            iterator ++) {
+        const hiberlite::bean_ptr<sandbox_cppcms::Pet>& aPet = *iterator;
+//        pets.push_back(*aPet);
+    }
+}
+
+//Pet & database::createPet(const Pet const & pet) {
+//    hiberlite::bean_ptr<sandbox_cppcms::Pet> copiedBean = db.copyBean(pet);
+//    *copiedBean;
 //}
 
 void database::init() {

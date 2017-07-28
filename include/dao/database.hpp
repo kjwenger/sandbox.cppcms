@@ -13,8 +13,8 @@ public:
     database();
     virtual ~database();
 
-//    void enumeratePets(std::vector<const Pet&> pets);
-//    const Pet& createPet(const Pet& pet);
+    void enumeratePets(std::vector<Pet>& pets);
+//    Pet & createPet(const Pet const & pet);
 private:
     void init();
 
