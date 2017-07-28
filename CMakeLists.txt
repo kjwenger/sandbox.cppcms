@@ -5,8 +5,10 @@ if (NOT DEFINED CMAKE_PREFIX_PATH)
 endif (NOT DEFINED CMAKE_PREFIX_PATH)
 file(GLOB SRC
         src/*.cpp
+        src/dao/*.cpp
         src/rest/*.cpp
 )
+find_package(Threads)
 add_executable(sandbox-cppcms ${SRC})
 include_directories(
         ${CMAKE_PREFIX_PATH}/include
@@ -15,7 +17,10 @@ include_directories(
         ${CMAKE_SOURCE_DIR}/include
 )
 target_link_libraries(sandbox-cppcms
-        ${CMAKE_PREFIX_PATH}/lib/libbooster.so
+        dl
+        ${CMAKE_THREAD_LIBS_INIT}
         pcre
+        ${CMAKE_PREFIX_PATH}/lib/libbooster.so
         ${CMAKE_PREFIX_PATH}/lib/libcppcms.so
+        ${CMAKE_PREFIX_PATH}/lib/libhiberlite.a
 )

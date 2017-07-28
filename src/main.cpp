@@ -2,6 +2,8 @@
 #include <cppcms/service.h>
 #include <cppcms/applications_pool.h>
 
+#include <hiberlite/hiberlite.h>
+
 #include "applications.hpp"
 
 int main(int argc, char* argv[]) {
