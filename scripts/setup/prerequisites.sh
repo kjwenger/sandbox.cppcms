@@ -16,6 +16,7 @@ sudo apt install build-essential -y
 sudo apt install gcc -y
 sudo apt install g++ -y
 sudo apt install cmake -y
+sudo apt install cppcheck
 
 # Get CppCMS prerequisites
 sudo apt install libpcre3-dev -y
