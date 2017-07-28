@@ -14,17 +14,11 @@ namespace sandbox_cppcms {
  */
 class applications : public cppcms::application {
 public:
-
     /**
      *
      * @param srv
      */
     applications(cppcms::service& srv);
-
-    /**
-     *
-     */
-    void shutdown();
 };
 
 } /* namespace sandbox_cppcms */
