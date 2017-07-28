@@ -19,8 +19,8 @@ sed -i 's/gcc/$(CC)/g' Makefile
 sed -i 's/g++/$(CXX)/g' Makefile
 sed -i.old '1s/^/CC ?= gcc\nCXX ?= g++/' Makefile
 INSTALL_PREFIX="${USR_DIR}"
-make -j ${CPUS} clean INSTALL_PREFIX="${INSTALL_PREFIX}"
-make -j ${CPUS} INSTALL_PREFIX="${INSTALL_PREFIX}"
+make -j ${CPUS} clean   INSTALL_PREFIX="${INSTALL_PREFIX}"
+make -j ${CPUS}         INSTALL_PREFIX="${INSTALL_PREFIX}"
 make -j ${CPUS} install INSTALL_PREFIX="${INSTALL_PREFIX}"
 popd
 popd
