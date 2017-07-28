@@ -9,3 +9,5 @@ sudo apt install build-essential
 sudo apt install gcc
 sudo apt install g++
 sudo apt install cmake
+
+sudo apt install cppcheck
