@@ -1,4 +1,9 @@
 {
+  "application" : {
+    "connection_string" : "sqlite3:db=petstore.db",
+    "name" : "sandbox-cppcms",
+    "version" : "0.1.0"
+  },
   "service": {
     "api": "http",
     "port": 8910
