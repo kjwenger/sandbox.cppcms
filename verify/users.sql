@@ -2,6 +2,16 @@
 
 BEGIN;
 
--- XXX Add verifications here.
+SELECT
+        id                              ,
+        username                        ,
+        firstName                       ,
+        lastName                        ,
+        email                           ,
+        password                        ,
+        phone                           ,
+        userStatus
+FROM users
+WHERE 0;
 
 ROLLBACK;
