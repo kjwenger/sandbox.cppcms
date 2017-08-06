@@ -24,3 +24,18 @@ target_link_libraries(sandbox-cppcms
         ${CMAKE_PREFIX_PATH}/lib/libcppcms.so
         ${CMAKE_PREFIX_PATH}/lib/libhiberlite.a
 )
+enable_testing()
+file(GLOB TEST
+        test/*.cpp
+)
+set(GTEST_ROOT ${CMAKE_PREFIX_PATH})
+find_package(GTest REQUIRED)
+add_executable(sandbox-cppcms-test ${SRC} ${TEST})
+include_directories(${GTEST_INCLUDE_DIRS})
+target_link_libraries(sandbox-cppcms-test
+        ${GTEST_LIBRARY_DEBUG}
+        ${GTEST_MAIN_LIBRARY_DEBUG})
+add_test(
+        NAME sandbox-cppcms-test
+        COMMAND sandbox-cppcms-test
+)

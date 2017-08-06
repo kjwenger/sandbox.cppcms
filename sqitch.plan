@@ -2,8 +2,8 @@
 %project=sandbox.cppcms
 %uri=https://github.com/theory/sqitch-sqlite-intro/
 
-users 2017-08-06T15:10:45Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our users.
 categories 2017-08-06T15:15:58Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our categories.
-orders 2017-08-06T15:16:15Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our orders.
 tags 2017-08-06T15:16:27Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our tags.
-pets 2017-08-06T15:16:45Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our pets.
+users 2017-08-06T15:10:45Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our users.
+orders 2017-08-06T15:16:15Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our orders.
+pets [categories tags] 2017-08-06T15:16:45Z Klaus Wenger <kjwenger@yahoo.com> # Creates table to track our pets.
