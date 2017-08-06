@@ -33,8 +33,10 @@
 
 # IDEs
 /.idea/
+/cmake-build-debug/
 
 # Generated Files and Directories
 /build*/
 /tmp/
 /usr/
+/*.db
