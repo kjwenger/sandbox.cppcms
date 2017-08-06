@@ -11,7 +11,9 @@ SELECT
         password                        ,
         phone                           ,
         userStatus
-FROM users
-WHERE 0;
+FROM
+        users
+WHERE
+        0;
 
 ROLLBACK;
