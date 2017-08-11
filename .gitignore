@@ -36,3 +36,4 @@
 
 # Generated Files and Directories
 /build/
+/*.db
