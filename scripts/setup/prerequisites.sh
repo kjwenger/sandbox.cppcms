@@ -2,12 +2,11 @@
 
 sudo apt update
 
-sudo apt install git
-sudo apt install subversion
+sudo apt install git -y
+sudo apt install subversion -y
 
-sudo apt install build-essential
-sudo apt install gcc
-sudo apt install g++
-sudo apt install cmake
-
-sudo apt install cppcheck
+sudo apt install build-essential -y
+sudo apt install gcc -y
+sudo apt install g++ -y
+sudo apt install cmake -y
+sudo apt install cppcheck -y
